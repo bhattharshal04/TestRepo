@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just Chillin</title>
+</head>
+
+<body>
+    <button onclick="promptFunction()">Press Me</button>
+    <p id="demo"></p>
+    <script>
+        function promptFunction() {
+            let text = prompt("Please, Enter your name.");
+            switch(text) {
+                case "":
+                        prompt("Please, Enter your name.");
+                    break;
+                case "Harshal":
+                    text = "Nice to meet you, Harshal.";
+                    break;
+                case "Premal":
+                    text = "Nice to meet you, Premal."
+                    break;
+                default:
+                    text = "It's a very nice name."; 
+            }
+            document.getElementById("demo").innerHTML = text;
+        }
+    </script>
+</body>
+
+</html>
